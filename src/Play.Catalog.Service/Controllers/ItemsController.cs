@@ -77,6 +77,10 @@ namespace Play.Catalog.Service.Controllers
                 items.Remove(item);
 
              }
+             else 
+             {
+                return NotFound();
+             }
              return NoContent();
         }
     }
